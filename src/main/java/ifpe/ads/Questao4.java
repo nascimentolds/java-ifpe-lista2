@@ -3,8 +3,6 @@ package ifpe.ads;
 // Questão 04: Escreva um programa que leia 10 números e
 // mostre na tela números na ordem inversa.
 
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Questao4 {
