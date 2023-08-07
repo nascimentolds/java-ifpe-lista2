@@ -9,18 +9,24 @@ public class Questao9 {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
 
-        String[] vogais = {"a", "e", "i", "o", "u"};
         String palavra;
+        int contador = 0;
 
         System.out.print("Digite uma palavra: ");
         palavra = ler.next();
         palavra = palavra.toLowerCase();
 
-        for (int i = 0; i < vogais.length; i++) {
-            if(palavra.contains(vogais[i])){
-                System.out.println(i);
+        for (int i = 0; i < palavra.length(); i++) {
+            char letra = palavra.charAt(i);
+
+            if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') {
+                contador++;
             }
         }
+
+        System.out.println("A palavra digitada possui " + contador + " vogais.");
+
+        ler.close();
 
     }
 }
